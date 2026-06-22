@@ -9,6 +9,7 @@ from darts.ad.anomaly_model import ForecastingAnomalyModel
 from darts.ad.scorers import NormScorer, KMeansScorer, WassersteinScorer
 from darts.ad.detectors import QuantileDetector
 sns.set_theme(style='darkgrid')
+st.set_page_config(page_title="다변량 시계열 이상탐지", layout="wide")
 
 st.markdown("""
     <style>
@@ -31,8 +32,6 @@ st.markdown("""
 # =======================================================================
 # 2. 메인 화면 및 UI 구성
 # =======================================================================
-
-st.set_page_config(page_title="다변량 시계열 이상탐지", layout="wide")
 st.title("📈 시계열분석 프로젝트 2")
 st.markdown("C421003 권수민")
 st.markdown("임의의 시계열 파일(다변량, CSV)을 업로드하여 예측을 수행합니다.")
